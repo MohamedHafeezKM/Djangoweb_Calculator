@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+       {% csrf_token %}
+       {{form.as_p}}
+       <!-- Give P tag to each one -->
+       <!-- works as_ul <ul></ul>,as_table <table><tr></table></tr>(row),as_p- <p></p> -->
+       <button type="submit">Register</button>
+    </form>
+</body>
+</html>
